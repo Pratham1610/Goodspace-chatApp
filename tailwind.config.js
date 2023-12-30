@@ -6,6 +6,12 @@ module.exports = {
   theme: {
     extend: {},
   },
+  variants: {
+    extend: {
+      backgroundImage: ['responsive', 'hover', 'focus'],
+    },
+  },
   plugins: [],
+  
 }
 
