@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const RegForm = () => {
+const RegForm = ({ onSubmit }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -8,10 +8,14 @@ const RegForm = () => {
     e.preventDefault();
     console.log('Email:', email);
     console.log('Password:', password);
+
+    if (onSubmit) {
+      onSubmit();
+    }
   };
 
   return (
-    <div className="backdrop-blur pt-8 flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white bg-opacity-20 backdrop-blur pt-8 flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="text-center text-white text-4xl font-bold font-poppins mb-8">Signup / Login</div>
       <div className="max-w-md w-full space-y-8">
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>

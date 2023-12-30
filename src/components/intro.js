@@ -1,5 +1,5 @@
 import React from 'react'
-import logoImage from './Group.png';
+import logoImage from './images/Group.png';
 const Intro = () => {
   return (
     <>

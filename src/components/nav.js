@@ -1,5 +1,5 @@
 import React from 'react'
-import logoImage from './Vector.png';
+import logoImage from './images/Vector.png';
 const Nav = () => {
   return (
     <>

@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('../images/Background.jpg');
+    background-image: url('./components/images/Background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     font-family: sans-serif;
