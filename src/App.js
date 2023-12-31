@@ -7,16 +7,13 @@ import Page2 from './components/page2';
 
 function App() {
   const [showpage2, setShowPage2] = useState(false);
-  const [backgroundImage, setBackgroundImage] = useState('./components/images/background.jpg'); // Provide the default background image path
 
   const handleSubmit = () => {
     console.log("submit is clicked");
     setShowPage2(true);
-    setBackgroundImage('./components/images/bg2.jpg');
   }
   return (
     <>
-    <div className='App'style={{ backgroundImage: `url(${backgroundImage})` }}>
     <Nav />
     <div className='flex'>
     <div className="flex-1">
@@ -32,7 +29,6 @@ function App() {
             <RegForm onSubmit={handleSubmit} />
           </div>
         )}
-    </div>
     </div>
     </div>
     </>

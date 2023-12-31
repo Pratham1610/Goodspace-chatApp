@@ -13,6 +13,6 @@ body {
 
 @media (max-width: 1220px) {
     body {
-        min-height: 100vh;
+        background-size: 100% 100%;
     }
 }
