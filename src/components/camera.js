@@ -21,7 +21,6 @@ const Camera = () => {
     startCamera();
 
     return () => {
-      // Cleanup
       if (videoRef.current) {
         const stream = videoRef.current.srcObject;
         if (stream) {
